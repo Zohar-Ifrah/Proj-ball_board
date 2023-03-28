@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mister Balls</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeyup="onHandleKey(event)" onload="onInitGame()">
+  <div class="modal hidden">
+    <h2>Congratulations!!</h2>
+    <p class="win-msg"></p>
+    <!-- <button class="save-record" onclick="onInit()">Save-Record</button> 2ADD -->
+  </div>
+  <h1>Collect those Balls</h1>
+  <p class="balls-collected">Balls Collected: <span>0</span></p>
+  <p class="balls-around">Balls Around: <span>0</span></p>
+  <button class="start-game hidden" onclick="startGame()">Start Game</button>
+  <button class="reset-game hidden" onclick="resetGame()">Reset Game</button>
+  <p class="choose-level">Choose Level:
+    <button onclick="chooseLvl(this)">Easy</button>
+    <button onclick="chooseLvl(this)">Hard</button>
+    <button onclick="chooseLvl(this)">Insane</button>
+  </p>
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+  <script src="js/util.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
